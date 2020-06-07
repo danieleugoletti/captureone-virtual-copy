@@ -6,9 +6,9 @@ You can use Smart Albums or solution like [Stacked Variants Album](https://forum
 
 I don't like these solutions.
 
-This script work in different way, but you have to change a bit your workflow, instead to use a "variant" feature you have to use a "Virtual Copy" script.
+This script works in different way, but you have to change a bit your workflow, instead to use a "variant" feature you have to use a "Virtual Copy" script.
 
-This script use a filesystem feature called [symbolic links](https://en.wikipedia.org/wiki/Symbolic_link). The symbolic links is like a copy of the file, but it does not take space, it's only few bytes. Capture One recognizes it how a new file.
+This script uses a filesystem feature called [symbolic links](https://en.wikipedia.org/wiki/Symbolic_link). The symbolic links is like a copy of the file, but it does not take space, it's only few bytes. Capture One recognizes it how a new file.
 
 When a "Virtual Copy" is created this happen under the hood:
 - create symbolic links with original file in the same folder, with -VC(number) postfix, ie. DSCF5151-VC1.RAF, DSCF5151-VC2.RAF, DSCF5151-VC3.RAF, ...
