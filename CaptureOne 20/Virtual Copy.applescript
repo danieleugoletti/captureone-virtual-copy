@@ -7,17 +7,7 @@ use AppleScript version "2.4" -- Yosemite (10.10) or later
 use scripting additions
 
 tell the application "Capture One 20"
-	-- guess if we work with session or catalog
-	set tehDocumentId to (id of (current document))
-	set theDocumentIdLength to length of tehDocumentId
-	set theDocumentCatalog to characters (theDocumentIdLength - 9) thru -1 of tehDocumentId as string
-
-	if theDocumentCatalog is ".cocatalog" then
-		set isSession to false
-	else
-		set isSession to true
-	end if
-
+	set isSession to (get session = (kind of current document))
 	set theSource to primary variant
 
 	-- check if a image is sselected
