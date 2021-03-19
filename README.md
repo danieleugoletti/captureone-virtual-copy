@@ -23,6 +23,19 @@ Are supported both catalog and session.
 
 # Installation
 
+## Capture One 21
+
+- Open Capture One
+- Select the menu "Scripts > Open script folder", a finder folder will be open
+- Open the folder "CaptureOne 21"
+- Copy the file Virtual Copy.applescript in scripts folder
+- Select the menu "Scripts > Update Menu Scripts"
+
+If you want the shortcut (⇧f2), open the terminal and paste this line:
+```
+defaults write com.captureone.captureone14 NSUserKeyEquivalents -dict-add "Virtual Copy" "$\\Uf705"
+```
+
 ## Capture One 20
 
 - Open Capture One
